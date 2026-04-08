@@ -1,11 +1,11 @@
 ---
 name: web-accessibility-standards
-description: Use when designing, reviewing, or implementing web interfaces against accessibility and web standards, including WCAG 2.2, ARIA, semantic HTML, keyboard access, responsive mobile-first layouts, focus management, dynamic content, automated testing, and accessibility review checklists. Provides practical guidance for CLI-driven development workflows and AI code generation tools such as Codex.
+description: Use when implementing accessible web interfaces, especially semantic HTML, ARIA, keyboard support, responsive mobile-first layouts, focus management, dynamic content, and automated accessibility checks. For audits and QA passes, use the `a11y-review` skill in the same repository.
 ---
 
 # Web Accessibility Standards Skill
 
-Use this skill whenever a task touches accessibility, semantics, ARIA, keyboard support, responsive behavior, dynamic content, testing pipelines, or compliance-oriented UI review. This skill is optimized for use by CLI tools and AI code-generation agents (e.g. GitHub Copilot Codex) that produce or evaluate web UI code.
+Use this skill for implementation work on accessible web interfaces. It is optimized for CLI tools and AI code-generation agents that produce or refactor UI code. If the task is primarily an audit, review, or compliance pass, use the `a11y-review` skill from the same repository.
 
 ---
 
@@ -26,17 +26,16 @@ Use this skill whenever a task touches accessibility, semantics, ARIA, keyboard 
 1. Identify the task type:
    - new UI design or page scaffold
    - component implementation
-   - accessibility review or QA pass
    - responsive/mobile fix
    - ARIA/widget work
    - dynamic content update (SPA navigation, live regions, modals)
-   - automated testing integration
+   - automated accessibility test integration
 2. Use native HTML semantics first.
 3. Add ARIA only when native HTML does not express the needed interaction or state.
 4. Check keyboard behavior and visible focus early in the development cycle, not at the end.
 5. Validate layout and content flow at narrow widths and in zoomed/reflowed states.
 6. For interactive widgets, use WAI-ARIA APG patterns as the implementation reference.
-7. For compliance-sensitive work, map findings to WCAG 2.2 success criteria.
+7. For compliance-sensitive work, map implementation choices to WCAG 2.2 success criteria.
 8. Integrate automated accessibility checks (axe-core, Lighthouse CI) into the build/test pipeline.
 
 ---
@@ -172,7 +171,7 @@ For CLI and AI agent workflows, use these approaches when reviewing generated co
 - Read [references/wcag-22.md](references/wcag-22.md) when the task needs standards mapping, review findings, or precise success criteria.
 - Read [references/aria-apg.md](references/aria-apg.md) when implementing widgets, landmarks, names, descriptions, live regions, or keyboard interaction patterns.
 - Read [references/responsive-mobile-first.md](references/responsive-mobile-first.md) when building layouts, breakpoints, or touch/mobile interactions.
-- Read [references/review-checklist.md](references/review-checklist.md) when doing an accessibility review or QA pass.
+- For audits, findings, and QA checklists, switch to [a11y-review/SKILL.md](a11y-review/SKILL.md).
 
 ---
 

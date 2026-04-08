@@ -116,3 +116,5 @@ Use these tools as the first line of automated checking (they catch ~30–40% of
 | Chrome DevTools Accessibility pane | Inspect accessibility tree and computed names/roles |
 
 Configure automated tools to **fail the build** on `critical` and `serious` violations, and **warn** on `moderate` and `minor`.
+
+> **Note**: Automated tools are estimated to detect roughly 30–40% of accessibility issues (a widely cited industry estimate based on studies such as the WebAIM Million report and Deque axe research). They are a necessary starting point, not a complete substitute for manual keyboard testing and screen-reader spot checks.

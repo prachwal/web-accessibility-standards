@@ -146,7 +146,7 @@ Include automated accessibility checks in the development pipeline:
 | `<div onclick>` or `<span role="button">` without keyboard handler | Not keyboard operable | Use `<button>` or add `keydown` for Enter/Space |
 | `placeholder` as the only label | Disappears on input, poor AT support | Use `<label>` always |
 | `aria-label` on a `<div>` with no role | No semantic benefit | Add a meaningful role or restructure |
-| `display:none` focus management | Hides element from AT entirely | Use `visibility:hidden` or `tabindex="-1"` to temporarily hide without destroying the semantic |
+| `display:none` focus management | Hides element from AT entirely | Use `tabindex="-1"` to remove from tab order while keeping in DOM; use `aria-hidden="true"` (+ ensure not focusable) to hide decorative content from AT |
 | `outline: none` / `outline: 0` globally | Removes visible focus | Override only with a visible alternative via `:focus-visible` |
 | Relying on `aria-hidden` to suppress decorative content that is still in tab order | AT hides element, keyboard still reaches it | Also set `tabindex="-1"` or remove from DOM |
 | Injecting `aria-live` regions on demand | Announcements may be missed | Declare live regions in the DOM from initial load |

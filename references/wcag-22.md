@@ -11,6 +11,8 @@ Use WCAG 2.2 as the current review and implementation baseline. Level A criteria
 
 ## Quick reference: Level A and AA criteria (by principle)
 
+> **Scope note**: The tables below include all Level A and AA criteria, which form the standard compliance target. A small number of Level AAA criteria that are new in WCAG 2.2 are included in the table for completeness (marked AAA) — they exceed the AA baseline and are aspirational rather than required for standard conformance.
+
 ### Principle 1 — Perceivable
 
 | Criterion | Level | Topic |
@@ -73,6 +75,7 @@ Use WCAG 2.2 as the current review and implementation baseline. Level A criteria
 | 3.2.2 On Input | A | Changing a setting does not trigger unexpected context change |
 | 3.2.3 Consistent Navigation | AA | Navigation is in the same relative order across pages |
 | 3.2.4 Consistent Identification | AA | Components with same function are identified consistently |
+| 3.2.6 Consistent Help | A | Help mechanisms appear in the same location across pages |
 | 3.3.1 Error Identification | A | Input errors are identified and described in text |
 | 3.3.2 Labels or Instructions | A | Labels or instructions are provided for user input |
 | 3.3.3 Error Suggestion | AA | Error corrections are suggested when known |
@@ -98,6 +101,7 @@ Added:
 - 2.4.13 Focus Appearance — AAA
 - 2.5.7 Dragging Movements — AA
 - 2.5.8 Target Size (Minimum) — AA
+- 3.2.6 Consistent Help — A
 - 3.2.6 Consistent Help — A
 - 3.3.7 Redundant Entry — A
 - 3.3.8 Accessible Authentication (Minimum) — AA
